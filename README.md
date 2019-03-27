@@ -33,5 +33,6 @@ SAMPLES_TO_SHOW = 5
 
 Change the interpolations in openCV eg.RGB,HSV
 
-```pythoninput_images = np.asarray([np.asarray(cv2.cvtColor(cv2.resize(cv2.imread(file),(128,128)), cv2.COLOR_BGR2RGB)) for file in glob(INPUT_DATA_DIR + '*')])
+```python
+input_images = np.asarray([np.asarray(cv2.cvtColor(cv2.resize(cv2.imread(file),(128,128)), cv2.COLOR_BGR2RGB)) for file in glob(INPUT_DATA_DIR + '*')])
 ```
