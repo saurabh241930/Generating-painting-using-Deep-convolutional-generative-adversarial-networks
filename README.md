@@ -42,6 +42,17 @@ input_images = np.asarray([np.asarray(cv2.cvtColor(cv2.resize(cv2.imread(file),(
 ```
 
 
+### show samples along with ongoing training
 
+```python
+sample_images = random.sample(list(input_images), SAMPLES_TO_SHOW)
+show_samples(sample_images, OUTPUT_DIR + "inputs", 0)
+```
+
+### Start training
+```python
+with tf.Graph().as_default():
+    train(get_batches(input_images), input_images.shape)
+```
 
 
