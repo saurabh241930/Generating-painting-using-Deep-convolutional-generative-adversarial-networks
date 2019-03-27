@@ -9,6 +9,10 @@ You can generate any kind of figure using this
 
 make sure each image have same **height x width**
 
+you can use this
+
+**`mogrify -path /path/to/store_output/ -resize 200x200^ -gravity Center -extent 200x200 /path/to/source*`**
+
 ```python
 INPUT_DATA_DIR = "/tf/DC_GAN/art_dataset/" # Path to the folder with your inputs
 ```
@@ -36,3 +40,8 @@ Change the interpolations in openCV eg.RGB,HSV
 ```python
 input_images = np.asarray([np.asarray(cv2.cvtColor(cv2.resize(cv2.imread(file),(128,128)), cv2.COLOR_BGR2RGB)) for file in glob(INPUT_DATA_DIR + '*')])
 ```
+
+
+
+
+
