@@ -11,7 +11,7 @@ make sure each image have same **height x width**
 
 you can use this
 
-**`mogrify -path /path/to/store_output/ -resize 200x200^ -gravity Center -extent 200x200 /path/to/source*`**
+**`mogrify -path /path/to/store_output/ -resize 200x200^ -gravity Center -extent 200x200 /path/to/source/*.jpg`**
 
 ```python
 INPUT_DATA_DIR = "/tf/DC_GAN/art_dataset/" # Path to the folder with your inputs
